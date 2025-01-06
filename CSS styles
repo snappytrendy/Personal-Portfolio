@@ -1,0 +1,55 @@
+*body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+section {
+    padding: 2rem;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.project {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    width: 300px;
+}
+.project img {
+    width: 100%;
+    border-radius: 8px;
+}
+footer {
+    background-color: #6200ea;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
