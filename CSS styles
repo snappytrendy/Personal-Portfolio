@@ -13,18 +13,40 @@ header {
 }
 header h1 {
     margin: 0;
-}
-nav {
-    margin-top: 10px;
-}
-nav a {
-    color: white;
+} 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    padding: 1rem 2rem;
+  }
+  
+  .photo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .nav-links a {
     text-decoration: none;
-    margin: 0 10px;
-}
-nav a:hover {
-    text-decoration: underline;
-}
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: green;
+  }
+  
 section {
     padding: 2rem;
 }
