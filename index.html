@@ -11,17 +11,44 @@
 <body>
 
     <body>
-        <header>
+        <header class="header" id="header">
             <h1>Diana Rose Munuhe</h1>
             <p>Front-End Developer | IT Professional</p>
-            <nav class="navbar">
-                <div class="photo"></div>
-                <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-                </ul>
+            <nav class="navbar" id="navbar">
+
+                    <div class="dropdown">
+                        <button class="dropbtn">About
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#skills">Skills</a>
+                            <a href="#experience">Experience</a>
+                          </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#project1">Project1</a>
+                                <a href="#project2">Project2</a>
+                                <a href="#project3">Project3</a>
+                              </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn">Contacts
+                                  <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#github">Github</a>
+                                    <a href="#LinkedIn">LinkedIn</a>
+                                    <a href="#Social Pages">Socialpages</a>
+                                  </div>
+                                </div>
+                
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
             </nav>
         </header>
     
@@ -30,6 +57,11 @@
             <p>
                 Hi! I'm Diana, an IT professional with a diploma in Computer Science. I specialize in creating responsive and user-friendly websites using HTML, CSS, and JavaScript. I also have experience in IT support.
             </p>
+        </section>
+        <section id="photo">
+            <div class="photo">
+                <img src="https://via.placeholder.com/300" alt="A Picture of me!">
+            </div>
         </section>
     
         <section id="projects">
@@ -48,7 +80,7 @@
             </div>
         </section>
     
-        <section id="contact">
+        <section id="contact" >
             <h2>Contact</h2>
             <p>If you're interested in working with me, feel free to reach out!</p>
             <p>Email: <a href="#dianamunuhe24@gmail.com"><dianamunuhe24@gmail.com></a></p>
