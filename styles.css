@@ -91,6 +91,40 @@ header h1 {
 section {
     padding: 2rem;
 }
+#about {
+  display: flex;
+  justify-content: center; /* Centers content */
+  align-items: center; /* Aligns items vertically */
+  padding: 50px;
+  max-width: 900px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adds space between text and image */
+}
+
+.about-content {
+  flex: 1; /* Takes available space */
+}
+
+.about-photo img {
+  width: 250px; /* Adjust image size */
+  height: auto;
+  border-radius: 50%; /* Makes image circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
+}
+@media (max-width: 768px) {
+  .about-container {
+      flex-direction: column; /* Stacks text and image vertically */
+      text-align: center; /* Centers the text */
+  }
+
+  .about-photo img {
+      margin-top: 20px; /* Adds spacing between text and image */
+  }
+}
 
 .projects {
     display: flex;
@@ -110,6 +144,47 @@ section {
 .project img {
     width: 100%;
     border-radius: 8px;
+}
+.button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-github {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #55ACEE;
+  color: white;
 }
 footer {
     background-color: #6200ea;
