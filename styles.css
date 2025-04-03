@@ -2,10 +2,11 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: black;
+    color:purple;
+    background-color:pink;
 }
 header {
-    background-color: #1e3a8a;
+  
     color: black;
     padding: 1rem 2rem;
     text-align: center;
@@ -43,14 +44,14 @@ header h1 {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #d8a0a0;
   min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px rgba(199, 128, 128, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  color: white;
   padding: 10px 14px;
   text-decoration: none;
   display: block;
@@ -66,7 +67,7 @@ header h1 {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color:purple;
 }
 
 /* Align caret icon */
@@ -122,9 +123,81 @@ section {
   }
 
   .about-photo img {
-      margin-top: 20px; /* Adds spacing between text and image */
+      margin-top: 20px; 
   }
 }
+/* Styles for skills */
+.skills-experience-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 Equal Columns */
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Box Styling */
+.skills-box, .experience-box {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress Bars */
+.skill {
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 120%;
+  height: 16px;
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #e90d8d;
+}
+
+/* Experience Section */
+.experience-item {
+  margin-bottom:12px;
+  padding-bottom: 10px;
+  
+}
+
+.experience-item h4 {
+  font-size: 26px;
+  margin-bottom: 7px;
+}
+
+/* Soft Skills */
+.soft-skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.soft-skills-list li {
+  background: #4CAF50;
+  color:white;
+  padding: 6px 12px;
+  border-radius: 1px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 6px;
+  width: fit-content;
+}
+
+/* Responsive: Stack on small screens */
+@media (max-width: 768px) {
+  .skills-experience-container {
+      grid-template-columns: 1fr; /* Stack vertically */
+  }
+}
+
 
 /* Fade-in Animation */
 @keyframes fadeIn {
@@ -195,7 +268,7 @@ section {
   display: inline-block;
   margin: 10px 5px;
   padding: 10px 15px;
-  background: #007bff;
+  background: #e90d8d;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -218,6 +291,7 @@ section {
 .fa-linkedin {
   background: #3B5998;
   color: white;
+  font-size: 40px;
 }
 
 .fa-instagram {
@@ -225,7 +299,7 @@ section {
   color: white;
 }
 footer {
-    background-color: #6200ea;
+
     color: white;
     text-align: center;
     padding: 1rem 0;
