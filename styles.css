@@ -195,3 +195,37 @@ section.show {
 .navbar a:hover {
     color: #4f46e5;
 }
+.dark-mode {
+    background-color: #0f172a;
+    color: #f1f5f9;
+}
+.dark-mode {
+    background-color: #0f172a;
+    color: #f1f5f9;
+}
+
+.dark-mode .header,
+.dark-mode .skills-box,
+.dark-mode .experience-box,
+.dark-mode .project-card,
+.dark-mode .service {
+    background-color: #1e293b;
+    color: #f1f5f9;
+}
+
+.dark-mode .btn {
+    background: #6366f1;
+}
+section {
+    padding: 5rem 1rem;
+}.project-card,
+.service,
+.skills-box,
+.experience-box {
+    border-radius: 15px;
+    transition: 0.3s;
+}.project-card:hover,
+.service:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
