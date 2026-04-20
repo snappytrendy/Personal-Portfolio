@@ -45,3 +45,14 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", revealSections);
     revealSections();
 });
+const toggleBtn = document.getElementById("darkToggle");
+
+toggleBtn.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        toggleBtn.textContent = "☀️ Light Mode";
+    } else {
+        toggleBtn.textContent = "🌙 Dark Mode";
+    }
+});
