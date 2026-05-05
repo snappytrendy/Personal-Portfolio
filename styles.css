@@ -66,17 +66,23 @@ body {
     transform: translateY(-2px);
 }
 
-/* SECTIONS */
+/* SECTIONS (SAFE VERSION) */
 section {
     padding: 5rem 1rem;
     max-width: 1100px;
     margin: auto;
+    opacity: 1;
+    transform: none;
+}
+
+/* Only animate if JS is working */
+.js-enabled section {
     opacity: 0;
     transform: translateY(40px);
     transition: all 0.8s ease;
 }
 
-section.show {
+.js-enabled section.show {
     opacity: 1;
     transform: translateY(0);
 }
