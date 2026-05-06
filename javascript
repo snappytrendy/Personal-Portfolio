@@ -63,21 +63,21 @@ document.addEventListener("DOMContentLoaded", function () {
     /* =========================
        SECTION FADE-IN
     ========================= */
-    const sections = document.querySelectorAll("section");
+  const sections = document.querySelectorAll("section");
 
-    function revealSections() {
-        sections.forEach(section => {
-            const position = section.getBoundingClientRect().top;
-            const screenHeight = window.innerHeight;
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+}, {
+    threshold: 0.15
+});
 
-            if (position < screenHeight - 100) {
-                section.classList.add("show");
-            }
-        });
-    }
-
-    window.addEventListener("scroll", revealSections);
-    revealSections();
+sections.forEach(section => {
+    observer.observe(section);
+});
 
 
     /* =========================
