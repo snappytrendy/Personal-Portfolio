@@ -1,13 +1,15 @@
 // WAIT FOR DOM
 document.addEventListener("DOMContentLoaded", function () {
 
+    // ENABLE JS-BASED ANIMATIONS
+    document.body.classList.add("js-enabled");
+
     /* =========================
        DARK MODE (with save)
     ========================= */
     const toggleBtn = document.getElementById("darkToggle");
 
     if (toggleBtn) {
-        // Load saved theme
         const savedTheme = localStorage.getItem("theme");
 
         if (savedTheme === "dark") {
@@ -30,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =========================
-       PROGRESS BARS ANIMATION
+       PROGRESS BARS (Observer)
     ========================= */
     const progressBars = document.querySelectorAll(".progress");
     const skillsSection = document.getElementById("skills-experience");
@@ -44,40 +46,39 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    function checkScroll() {
-        if (!skillsSection) return;
+    if (skillsSection) {
+        const skillsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateBars();
+                    skillsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
 
-        const sectionTop = skillsSection.getBoundingClientRect().top;
-        const screenHeight = window.innerHeight;
-
-        if (sectionTop < screenHeight - 100) {
-            animateBars();
-            window.removeEventListener("scroll", checkScroll);
-        }
+        skillsObserver.observe(skillsSection);
     }
-
-    window.addEventListener("scroll", checkScroll);
-    checkScroll();
 
 
     /* =========================
-       SECTION FADE-IN
+       SECTION FADE-IN (Observer)
     ========================= */
-  const sections = document.querySelectorAll("section");
+    const sections = document.querySelectorAll("section");
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-        }
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                sectionObserver.unobserve(entry.target); // animate once
+            }
+        });
+    }, {
+        threshold: 0.15
     });
-}, {
-    threshold: 0.15
-});
 
-sections.forEach(section => {
-    observer.observe(section);
-});
+    sections.forEach(section => {
+        sectionObserver.observe(section);
+    });
 
 
     /* =========================
