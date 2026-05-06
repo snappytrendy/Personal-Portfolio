@@ -63,23 +63,30 @@ document.addEventListener("DOMContentLoaded", function () {
     /* =========================
        SECTION FADE-IN (Observer)
     ========================= */
-    const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section");
 
-    const sectionObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-                sectionObserver.unobserve(entry.target); // animate once
-            }
-        });
-    }, {
-        threshold: 0.15
+const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            sectionObserver.unobserve(entry.target);
+        }
     });
+}, {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+});
 
-    sections.forEach(section => {
-        sectionObserver.observe(section);
-    });
+// Observe all sections
+sections.forEach(section => {
+    sectionObserver.observe(section);
 
+    // 🔥 FIX: immediately show if already in viewport
+    const rect = section.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+        section.classList.add("show");
+    }
+});
 
     /* =========================
        SMOOTH SCROLL
