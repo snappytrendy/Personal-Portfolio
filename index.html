@@ -4,201 +4,387 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diana Rose | Front-End Developer</title>
-
     <meta name="description" content="Diana Rose Munuhe - Front-End Developer specializing in modern, responsive websites and digital solutions.">
 
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
-<header class="header">
-    <h1>Diana Rose Munuhe</h1>
-    <p>Front-End Developer | Creating modern, responsive websites and digital solutions</p>
-    <button id="darkToggle" class="btn">🌙 Dark Mode</button>
-</header>
+<div class="page-container">
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-content">
-        <h2>I design and build modern, user-friendly websites</h2>
-        <p>Passionate about creating clean interfaces, solving problems, and helping businesses grow online.</p>
-        <a href="#projects" class="btn">View My Work</a>
-        <a href="#contact" class="btn">Contact Me</a>
+   <div class="sidebar-top">
+    <h1>Diana Rose</h1>
+    <p>Front-End Developer & IT Professional</p>
+    <div class="sidebar-note">
+     <p>
+    I build clean, responsive, and user-friendly websites with a growing focus on full-stack development, digital solutions, and business-facing web experiences.
+</p>
     </div>
-</section>
+</div>
 
-<!-- ABOUT -->
-<section id="about">
+        <nav class="sidebar-nav">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills-experience">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button id="darkToggle" class="sidebar-btn">🌙 Dark Mode</button>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- HERO -->
+        <section id="hero" class="hero">
+            <div class="hero-container">
+
+                <div class="hero-text">
+                    <p class="hero-intro">Hello, I'm</p>
+                    <h2>Diana Rose</h2>
+
+                    <p class="hero-description">
+                        Front-End Developer focused on building clean, modern, and user-friendly web experiences.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="images/me.jpg" alt="Portrait of Diana Rose">
+                </div>
+
+            </div>
+        </section>
+
+     <!-- ABOUT -->
+<section id="about" class="about-section">
     <div class="about-container">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>
-                Hi! I'm Diana, a Front-End Developer with a background in IT support. I enjoy building responsive, user-friendly websites and solving real-world problems through technology.
-            </p>
-            <p>
-                Alongside my personal projects, I also help small businesses create simple, effective websites that improve their online presence and customer reach.
-            </p>
-        </div>
+        <p class="section-tag">About Me</p>
+        <h2>Front-End Developer with a growing interest in full-stack development.</h2>
 
-        <div class="about-photo">
-            <img src="Images/Me Picture.jpg" alt="Diana Rose Munuhe portrait">
+        <div class="about-card">
+            <p>
+                Hi! I'm Diana, a Front-End Developer with a background in IT, operations, and business-facing roles. I enjoy building responsive, user-friendly websites and using technology to solve practical problems.
+            </p>
+
+            <p>
+                My current focus is front-end development with HTML, CSS, JavaScript, and React, while also growing my backend skills as I work toward becoming a full stack developer.
+            </p>
+
+            <p>
+                I’m especially interested in creating clean interfaces, improving user experience, and building digital solutions that help businesses strengthen their online presence.
+            </p>
         </div>
     </div>
 </section>
 
-<!-- SKILLS & EXPERIENCE -->
-<section id="skills-experience">
-    <h2>Skills & Experience</h2>
+       <!-- SKILLS & EXPERIENCE -->
+<section id="skills-experience" class="skills-section">
+    <div class="section-heading">
+        <h2>Skills & Experience</h2>
+        <p>
+            A blend of front-end development, IT support, digital operations, and client-facing experience.
+        </p>
+    </div>
 
-    <div class="skills-experience-container">
+    <div class="skills-layout">
 
-        <!-- TECH SKILLS -->
-        <div class="skills-box">
-            <h3>Technical Skills</h3>
-            <p>HTML, CSS, JavaScript</p>
-            <p>React (Learning)</p>
-            <p>Git & GitHub</p>
-            <p>Networking & IT Support</p>
-            <p>System Administration</p>
-        </div>
-
-        <!-- EXPERIENCE -->
-        <div class="experience-box">
+        <!-- LEFT: EXPERIENCE TIMELINE -->
+        <div class="experience-timeline">
             <h3>Experience</h3>
 
-            <p><strong>IT Support | Safari Park Hotel</strong><br>
-            May – August 2025</p>
+            <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                    <h4>Finance Assistant</h4>
+                    <p class="timeline-company">Kwetu Nairobi Curio Collection By Hilton</p>
+                    <p class="timeline-date">November 2025 – Present</p>
+                    <p>
+                        Supporting income audits and accounts payable by verifying records,
+                        processing invoices, and maintaining accurate financial documentation.
+                    </p>
+                </div>
+            </div>
 
-            <p><strong>Sales Experience</strong><br>
-            2025 – Present (Part-time)</p>
+            <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                    <h4>Operations & Marketing Manager (Part-Time)</h4>
+                    <p class="timeline-company">STEM Stars Africa</p>
+                    <p class="timeline-date">July 2025 – October 2025</p>
+                    <p>
+                        Led outreach campaigns, managed content timelines, supported reporting,
+                        and coordinated digital operations to improve visibility and engagement.
+                    </p>
+                </div>
+            </div>
 
-            <p><strong>Software Consultancy | Novacom Systems Limited</strong></p>
+            <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                    <h4>Business Developer (Part-Time)</h4>
+                    <p class="timeline-company">CodingKraq</p>
+                    <p class="timeline-date">May 2025 – July 2025</p>
+                    <p>
+                        Supported digital campaigns, promoted tech training programs,
+                        assisted with content creation, and managed lead tracking activities.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                    <h4>Sales Agent (Part-Time)</h4>
+                    <p class="timeline-company">Ngao Credit</p>
+                    <p class="timeline-date">January 2025 – April 2025</p>
+                    <p>
+                        Engaged clients, supported sales goals through persuasive communication,
+                        and maintained detailed client records and follow-up processes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                    <h4>IT Attachment Intern</h4>
+                    <p class="timeline-company">Safari Park Hotel</p>
+                    <p class="timeline-date">May 2024 – August 2024</p>
+                    <p>
+                        Maintained hardware and software systems, supported IT operations,
+                        and helped improve digital efficiency and reliability.
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <!-- SOFT SKILLS -->
-        <div class="skills-box">
-            <h3>Soft Skills</h3>
-            <ul>
-                <li>Problem Solving</li>
-                <li>Communication & Teamwork</li>
-                <li>Adaptability</li>
-                <li>Time Management</li>
-            </ul>
-        </div>
+        <!-- RIGHT: SKILLS CARDS -->
+        <div class="skills-cards">
 
+            <div class="skills-card">
+                <h3>Technical Skills</h3>
+                <div class="skill-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Git & GitHub</span>
+                    <span>Responsive Web Design</span>
+                    <span>Basic Networking</span>
+                    <span>IT Support</span>
+                    <span>Troubleshooting</span>
+                    <span>Backend Fundamentals</span>
+                </div>
+            </div>
+
+            <div class="skills-card">
+                <h3>Professional Strengths</h3>
+                <div class="skill-tags">
+                    <span>Communication</span>
+                    <span>Team Collaboration</span>
+                    <span>Problem Solving</span>
+                    <span>Operations Support</span>
+                    <span>Sales & Marketing</span>
+                    <span>Documentation</span>
+                    <span>Client Support</span>
+                    <span>Adaptability</span>
+                    <span>Organization</span>
+                    <span>Time Management</span>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
-
-<!-- PROJECTS -->
-<section id="projects">
-    <h2>My Projects</h2>
+        <!-- PROJECTS -->
+<section id="projects" class="projects-section">
+    <div class="section-heading">
+        <h2>My Projects</h2>
+        <p>
+            A selection of projects that reflect my front-end development journey, problem-solving approach, and interest in building practical digital solutions.
+        </p>
+    </div>
 
     <div class="projects-container">
 
         <!-- PROJECT 1 -->
         <div class="project-card">
-            <img src="Images/food.png" alt="Food ordering website interface">
+            <img src="Images/AI Doc Assistant.png" alt="AI Document Assistant interface">
 
-            <h3>Food Ordering Website</h3>
+            <div class="project-content">
+                <h3>AI Document Assistant</h3>
 
-            <p>
-                A responsive food ordering platform designed to improve user experience by allowing customers to easily browse menus and place orders online.
-            </p>
+                <p>
+                    An AI-powered web application designed to improve document clarity and readability by generating enhanced versions of user-submitted content.
+                </p>
 
-            <p>
-                Focused on clean UI design, smooth navigation, and mobile responsiveness to enhance usability for both customers and businesses.
-            </p>
+                <p>
+                    The project focuses on usability, clean layout structure, and a smooth editing workflow that makes document improvement easier for users.
+                </p>
 
-            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                <p><strong>Technologies:</strong> React, JavaScript, CSS</p>
 
-            <div class="project-links">
-                <a href="#" class="btn" onclick="return false;">Live Demo (Coming Soon)</a>
-                <a href="#" class="btn" onclick="return false;">GitHub (Private)</a>
+                <div class="project-links">
+                    <a href="https://snappytrendy.github.io/AI-Doc-Assistant/" target="_blank" rel="noopener" class="btn">Live Demo</a>
+                    <a href="https://github.com/snappytrendy/AI-Doc-Assistant" target="_blank" rel="noopener" class="btn">GitHub</a>
+                </div>
             </div>
         </div>
-
 
         <!-- PROJECT 2 -->
         <div class="project-card">
-            <img src="Images/AI Doc Assistant.png" alt="AI document assistant interface">
+            <img src="Images/food.png" alt="Food ordering website interface">
 
-            <h3>AI Document Assistant</h3>
+            <div class="project-content">
+                <h3>Online Food Order Platform</h3>
 
-            <p>
-                An AI-powered web application that enhances document clarity and readability by generating improved versions of user-submitted content.
-            </p>
+                <p>
+                    A responsive food ordering platform created to make it easier for users to browse menus, view food options, and place orders online through a clean and accessible interface.
+                </p>
 
-            <p>
-                Built with a focus on usability, real-time interaction, and clean interface design to simplify document editing workflows.
-            </p>
+                <p>
+                    The project focused on front-end structure, visual organization, and mobile responsiveness to improve usability for both customers and businesses.
+                </p>
 
-            <p><strong>Technologies:</strong> React, JavaScript</p>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
 
-            <div class="project-links">
-                <a href="https://snappytrendy.github.io/AI-Doc-Assistant/" target="_blank" rel="noopener" class="btn">Live Demo</a>
-                <a href="https://github.com/snappytrendy/AI-Doc-Assistant" target="_blank" rel="noopener" class="btn">GitHub</a>
+                <div class="project-links">
+                    <a href="#" class="btn" onclick="return false;">Live Demo (Coming Soon)</a>
+                    <a href="#" class="btn" onclick="return false;">GitHub (Private)</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+            <img src="Images/car-brokerage.jpg" alt="Car brokerage website concept">
+
+            <div class="project-content">
+                <h3>Car Brokerage Website</h3>
+
+                <p>
+                    A developing web platform concept designed to connect people looking to buy or sell cars with brokers, dealerships, and showrooms offering the vehicles they need.
+                </p>
+
+                <p>
+                    The goal of the project is to simplify the car search and selling process through a user-friendly website that helps users find listings, compare options, and connect with the right sellers or brokers.
+                </p>
+
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+
+                <div class="project-links">
+                    <a href="#" class="btn" onclick="return false;">In Progress</a>
+                    <a href="#" class="btn" onclick="return false;">Project Plan</a>
+                </div>
             </div>
         </div>
 
     </div>
 </section>
-            
-<!-- SERVICES -->
-<section id="services">
-    <h2>What I Can Help With</h2>
+
+        <!-- SERVICES -->
+<section id="services" class="services-section">
+    <div class="section-heading">
+        <h2>What I Can Help With</h2>
+        <p>
+            I help individuals, small businesses, and growing brands create clean digital experiences and improve their online presence through practical front-end and web support solutions.
+        </p>
+    </div>
 
     <div class="services-container">
 
-        <div class="service">
-            <h3>Website Development</h3>
-            <p>Creating responsive and modern websites tailored to your needs.</p>
+        <div class="service-card">
+            <h3>Front-End Website Development</h3>
+            <p>
+                Building responsive and user-friendly websites with clean layouts, modern structure, and a strong focus on usability across devices.
+            </p>
         </div>
 
-        <div class="service">
-            <h3>Business Websites</h3>
-            <p>Helping small businesses establish a strong online presence.</p>
+        <div class="service-card">
+            <h3>Business Website Setup</h3>
+            <p>
+                Helping small businesses and personal brands create a professional online presence through simple, well-structured websites that showcase their services clearly.
+            </p>
         </div>
 
-        <div class="service">
-            <h3>Website Updates & Support</h3>
-            <p>Maintaining and improving existing websites.</p>
+        <div class="service-card">
+            <h3>Website Updates & Digital Support</h3>
+            <p>
+                Supporting website improvements, content updates, layout adjustments, and light technical assistance to help keep digital platforms current and functional.
+            </p>
         </div>
 
     </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
-    <h2>Contact Me</h2>
-
-    <p>If you're interested in working with me or have any questions, feel free to reach out.</p>
-
-    <p>Email: <a href="mailto:dianamunuhe24@gmail.com">dianamunuhe24@gmail.com</a></p>
-
-    <a href="https://wa.me/254700000000" target="_blank" class="btn">Chat on WhatsApp</a>
-
-    <!-- CV -->
-    <div class="cv">
-        <h3>My CV</h3>
-        <a href="assets/My CV.pdf" class="btn" download>Download CV</a>
-        <a href="assets/My CV.pdf" class="btn" target="_blank">View CV</a>
+       <!-- CONTACT -->
+<section id="contact" class="contact-section">
+    <div class="section-heading">
+        <h2>Contact Me</h2>
+        <p>
+            If you'd like to work with me, collaborate on a project, or simply have a question, feel free to reach out.
+        </p>
     </div>
 
-    <!-- SOCIALS -->
-    <div class="social-links">
-        <a href="https://www.instagram.com/snappy_trendy/" target="_blank" rel="noopener" class="fa fa-instagram fa-2x"></a>
-        <a href="https://www.linkedin.com/in/diana-munuhe-878369262/" target="_blank" rel="noopener" class="fa fa-linkedin fa-2x"></a>
-        <a href="https://github.com/snappytrendy" target="_blank" rel="noopener" class="fa fa-github fa-2x"></a>
+    <div class="contact-container">
+
+        <!-- LEFT: CONTACT DETAILS -->
+        <div class="contact-card">
+            <h3>Let’s Connect</h3>
+
+            <p>
+                I’m open to front-end opportunities, collaborative projects, and digital work that allows me to build useful, user-friendly solutions.
+            </p>
+
+            <div class="contact-details">
+                <p><strong>Email:</strong> <a href="mailto:dianamunuhe24@gmail.com">dianamunuhe24@gmail.com</a></p>
+                <p><strong>Location:</strong> Nairobi, Kenya</p>
+            </div>
+
+            <div class="contact-actions">
+                <a href="https://wa.me/254700000000" target="_blank" rel="noopener" class="btn">Chat on WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- RIGHT: CV + SOCIALS -->
+        <div class="contact-card">
+            <h3>CV & Profiles</h3>
+
+            <p>
+                You can view my CV, download it, or connect with me through my professional and social platforms below.
+            </p>
+
+            <div class="cv-buttons">
+                <a href="assets/My CV.pdf" class="btn" download>Download CV</a>
+                <a href="assets/My CV.pdf" class="btn" target="_blank" rel="noopener">View CV</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/diana-munuhe-878369262/" target="_blank" rel="noopener" class="fa fa-linkedin fa-2x" aria-label="LinkedIn"></a>
+                <a href="https://github.com/snappytrendy" target="_blank" rel="noopener" class="fa fa-github fa-2x" aria-label="GitHub"></a>
+                <a href="https://www.instagram.com/snappy_trendy/" target="_blank" rel="noopener" class="fa fa-instagram fa-2x" aria-label="Instagram"></a>
+            </div>
+        </div>
+
     </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-    <p>&copy; 2026 Diana Rose Munuhe. All rights reserved.</p>
-</footer>
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 Diana Rose Munuhe. All rights reserved.</p>
+        </footer>
+
+    </main>
+</div>
+
 <script src="./javascript.js"></script>
 </body>
 </html>
