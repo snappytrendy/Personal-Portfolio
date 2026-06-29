@@ -286,7 +286,12 @@ body{
 .hero-text{
     flex: 1;
 }
-
+.hero-text{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
 .hero-text h2{
 
     font-size: 4rem;
@@ -308,6 +313,25 @@ body{
     color: #475569;
 
     margin-bottom: 35px;
+}
+.hero-intro{
+    font-size:1rem;
+    font-weight:600;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#10b981;
+
+    margin:0 0 12px 0;
+}
+
+.hero-description{
+    font-size:1.2rem;
+    line-height:1.8;
+    color:#475569;
+
+    margin:0 0 35px 0;
+
+    max-width:550px;
 }
 
 /* BUTTONS */
