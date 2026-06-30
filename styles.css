@@ -46,31 +46,7 @@ body{
 
 .page-container{
 
-    display:flex;
-
     min-height:100vh;
-
-}
-
-/* ==========================
-   SIDEBAR
-========================== */
-
-.sidebar{
-
-    width:280px;
-
-    background:var(--sidebar);
-
-    position:fixed;
-
-    left:0;
-
-    top:0;
-
-    height:100vh;
-
-    padding:40px 30px;
 
 }
 
@@ -78,23 +54,35 @@ body{
    MAIN CONTENT
 ========================== */
 .main-content{
-
-    flex:1;
-
-    min-width:0;
-
-    min-height:100vh;
-
+    margin-left: 280px;
+    width: calc(100% - 280px);
+    min-height: 100vh;
 }
 /* ==========================
    SIDEBAR CONTENT
 ========================== */
 
 .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 280px;
+    height: 100vh;
+
+    padding: 40px 30px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    background: var(--surface);
+
     border-right: 1px solid var(--border);
+
+    overflow-y: hidden;
+
+    z-index: 1000;
 }
 
 .sidebar-top{
