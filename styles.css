@@ -610,3 +610,570 @@ body {
 
   box-shadow: 0 20px 40px rgba(16, 185, 129, 0.12);
 }
+/* ===========================
+   EXPERIENCE & EXPERTISE
+=========================== */
+
+.skills-section{
+    padding:100px 60px;
+    background:var(--bg);
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-heading h2{
+    font-size:2.7rem;
+    color:var(--heading);
+    margin-bottom:18px;
+}
+
+.section-heading p{
+    max-width:720px;
+    margin:auto;
+    color:var(--muted);
+    font-size:1.05rem;
+    line-height:1.8;
+}
+
+.skills-layout{
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:60px;
+    align-items:start;
+}
+/* ===========================
+   EXPERIENCE TIMELINE
+=========================== */
+
+.experience-timeline{
+
+    position:relative;
+
+    padding-left:30px;
+}
+
+.experience-timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:8px;
+
+    top:10px;
+
+    bottom:10px;
+
+    width:2px;
+
+    background:var(--border);
+}
+
+.timeline-item{
+
+    position:relative;
+
+    padding-bottom:45px;
+}
+
+.timeline-dot{
+
+    position:absolute;
+
+    left:-30px;
+
+    top:8px;
+
+    width:16px;
+
+    height:16px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    border:4px solid var(--bg);
+}
+
+.timeline-content{
+
+    background:var(--card);
+
+    padding:25px;
+
+    border-radius:18px;
+
+    border:1px solid var(--border);
+
+    transition:.35s ease;
+}
+
+.timeline-content:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 40px rgba(16,185,129,.12);
+}
+.timeline-content h4{
+
+    color:var(--heading);
+
+    margin-bottom:8px;
+
+    font-size:1.2rem;
+}
+
+.timeline-company{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    margin-bottom:6px;
+}
+
+.timeline-date{
+
+    color:var(--muted);
+
+    font-size:.9rem;
+
+    margin-bottom:15px;
+}
+
+.timeline-content p{
+
+    color:var(--text);
+
+    line-height:1.7;
+}
+/* ===========================
+   SKILLS CARDS
+=========================== */
+
+.skills-cards{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.skills-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    transition:.35s ease;
+}
+
+.skills-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 40px rgba(16,185,129,.12);
+}
+
+.skills-card h3{
+
+    color:var(--heading);
+
+    font-size:1.25rem;
+
+    margin-bottom:22px;
+}
+/* ===========================
+   SKILL TAGS
+=========================== */
+
+.skill-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+}
+
+.skill-tags span{
+
+    background:rgba(16,185,129,.12);
+
+    color:var(--heading);
+
+    border:1px solid rgba(16,185,129,.25);
+
+    padding:10px 16px;
+
+    border-radius:50px;
+
+    font-size:.9rem;
+
+    transition:.3s ease;
+}
+
+.skill-tags span:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+    transform:translateY(-3px);
+}
+/* ===========================
+   PROJECTS SECTION
+=========================== */
+
+.projects-section{
+    padding:100px 60px;
+    background:var(--bg);
+}
+
+.projects-container{
+    display:flex;
+    flex-direction:column;
+    gap:60px;
+    margin-top:70px;
+}
+
+.project-card{
+    display:grid;
+    grid-template-columns:380px 1fr;
+    gap:45px;
+
+    align-items:center;
+
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:24px;
+
+    overflow:hidden;
+
+    padding:30px;
+
+    transition:.35s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-6px);
+    border-color:var(--primary);
+    box-shadow:0 20px 45px rgba(16,185,129,.12);
+}
+.project-content{
+
+    border-left:1px solid rgba(255,255,255,.05);
+
+    padding-left:35px;
+}
+/* Alternate layout */
+
+.project-card:nth-child(even){
+    grid-template-columns:1fr 380px;
+}
+
+.project-card:nth-child(even) img{
+    order:2;
+}
+
+.project-card:nth-child(even) .project-content{
+    order:1;
+}
+/* ===========================
+   PROJECT IMAGE
+=========================== */
+
+.project-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    display:block;
+    border-radius:18px;
+    transition:.4s ease;
+     box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.project-card:hover img{
+    transform:scale(1.03);
+     box-shadow:
+        0 25px 45px rgba(0,0,0,.35),
+        0 0 35px rgba(16,185,129,.18);
+
+    filter:brightness(1.04);
+}
+.project-card img{
+
+    position:relative;
+
+    z-index:2;
+}
+
+.project-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+
+    height:220px;
+
+    background:rgba(16,185,129,.15);
+
+    filter:blur(70px);
+
+    border-radius:50%;
+
+    left:80px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    opacity:0;
+
+    transition:.4s ease;
+}
+
+.project-card{
+
+    position:relative;
+}
+
+.project-card:hover::before{
+
+    opacity:1;
+}
+.project-card:nth-child(even) .project-content{
+
+    border-left:none;
+
+    border-right:1px solid rgba(255,255,255,.05);
+
+    padding-left:0;
+
+    padding-right:35px;
+}
+/* ===========================
+   PROJECT CONTENT
+=========================== */
+
+.project-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.project-content h3{
+    color:var(--heading);
+    font-size:2rem;
+    margin:12px 0 18px;
+}
+
+.project-content p{
+    color:var(--text);
+    line-height:1.8;
+    margin-bottom:18px;
+}
+/* ===========================
+   PROJECT STATUS
+=========================== */
+
+.project-status{
+
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    width:fit-content;
+
+    padding:8px 16px;
+
+    border-radius:50px;
+
+    font-size:.82rem;
+    font-weight:600;
+
+    margin-bottom:15px;
+}
+
+.project-status.completed{
+
+    background:rgba(16,185,129,.12);
+    color:#A7F3D0;
+    border:1px solid rgba(16,185,129,.35);
+}
+
+.project-status.progress{
+
+    background:rgba(245,158,11,.12);
+    color:#FCD34D;
+    border:1px solid rgba(245,158,11,.35);
+}
+
+.project-status.portfolio{
+
+    background:rgba(59,130,246,.12);
+    color:#BFDBFE;
+    border:1px solid rgba(59,130,246,.35);
+}
+.status-dot{
+
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+
+    background:currentColor;
+}
+/* ===========================
+   PROJECT BUTTONS
+=========================== */
+
+.project-links{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+
+    flex-wrap:wrap;
+}
+
+.project-links a{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:12px 24px;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s ease;
+}
+
+/* Primary */
+
+.project-links a:first-child{
+
+    background:var(--primary);
+
+    color:white;
+}
+
+.project-links a:first-child:hover{
+
+    background:var(--primary-hover);
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(16,185,129,.25);
+}
+
+/* Secondary */
+
+.project-links a:last-child{
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+    background:transparent;
+}
+
+.project-links a:last-child:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+    transform:translateY(-3px);
+}
+/* ===========================
+   PROJECT TECHNOLOGIES
+=========================== */
+
+.project-tech{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin:20px 0 28px;
+}
+
+.project-tech span{
+
+    padding:8px 15px;
+
+    border-radius:50px;
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+    transition:.3s ease;
+}
+.project-tech .html{
+
+    background:rgba(227,79,38,.15);
+
+    color:#F97316;
+
+    border:1px solid rgba(227,79,38,.35);
+}
+.project-tech .css{
+
+    background:rgba(38,77,228,.15);
+
+    color:#60A5FA;
+
+    border:1px solid rgba(38,77,228,.35);
+}
+.project-tech .javascript{
+
+    background:rgba(247,223,30,.15);
+
+    color:#FACC15;
+
+    border:1px solid rgba(247,223,30,.35);
+}
+.project-tech .react{
+
+    background:rgba(97,219,251,.15);
+
+    color:#67E8F9;
+
+    border:1px solid rgba(97,219,251,.35);
+}
+.project-tech .git{
+
+    background:rgba(36,41,46,.15);
+
+    color:#E5E7EB;
+
+    border:1px solid rgba(255,255,255,.15);
+}
+.project-tech span:hover{
+
+    transform:translateY(-2px) scale(1.05);
+}
