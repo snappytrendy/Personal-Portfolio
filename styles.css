@@ -44,6 +44,9 @@ body {
 
 .page-container {
   min-height: 100vh;
+    max-width:1920px;
+    margin:0 auto;
+
 }
 
 /* ==========================
@@ -354,9 +357,7 @@ body {
   color: #fff;
   transform: translateY(-3px);
 }
-/* ===========================
-   TECH STACK
-=========================== */
+
 /* ===========================
    HERO TECH SECTION
 =========================== */
@@ -472,45 +473,6 @@ body {
   z-index: 1;
 }
 
-/* MOBILE */
-
-@media (max-width: 900px) {
-  .hero {
-    padding: 70px 0;
-
-    min-height: auto;
-  }
-
-  .hero-container {
-    flex-direction: column-reverse;
-
-    text-align: center;
-
-    padding: 40px 25px;
-
-    gap: 50px;
-  }
-
-  .hero-text h2 {
-    font-size: 2.7rem;
-  }
-
-  .hero-text p {
-    margin: auto auto 35px;
-  }
-
-  .hero-buttons {
-    justify-content: center;
-  }
-
-  .tech-stack {
-    justify-content: center;
-  }
-
-  .hero-image img {
-    width: 300px;
-  }
-}
 /* ===========================
    ABOUT SECTION
 =========================== */
@@ -1317,28 +1279,6 @@ body {
 
     box-shadow:0 15px 30px rgba(16,185,129,.25);
 }
-
-/* ==========================
-   RESPONSIVE
-========================== */
-
-@media (max-width: 900px){
-
-    .services-section{
-
-        padding:80px 30px;
-    }
-
-    .services-grid{
-
-        grid-template-columns:1fr;
-    }
-
-    .service-card{
-
-        min-height:auto;
-    }
-}
 /* ==========================
    CONTACT
 ========================== */
@@ -1702,4 +1642,32 @@ body {
     color:var(--primary);
 
     box-shadow:0 12px 25px rgba(16,185,129,.18);
+}
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+/* Large Laptops */
+@media (max-width: 1400px){
+
+}
+
+/* Standard Laptops */
+@media (max-width: 1200px){
+
+}
+
+/* Tablets */
+@media (max-width: 992px){
+
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+}
+
+/* Small Phones */
+@media (max-width: 480px){
+
 }
