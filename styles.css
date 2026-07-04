@@ -44,6 +44,9 @@ body {
 
 .page-container {
   min-height: 100vh;
+    max-width:1920px;
+    margin:0 auto;
+
 }
 
 /* ==========================
@@ -485,45 +488,6 @@ body {
   z-index: 1;
 }
 
-/* MOBILE */
-
-@media (max-width: 900px) {
-  .hero {
-    padding: 70px 0;
-
-    min-height: auto;
-  }
-
-  .hero-container {
-    flex-direction: column-reverse;
-
-    text-align: center;
-
-    padding: 40px 25px;
-
-    gap: 50px;
-  }
-
-  .hero-text h2 {
-    font-size: 2.7rem;
-  }
-
-  .hero-text p {
-    margin: auto auto 35px;
-  }
-
-  .hero-buttons {
-    justify-content: center;
-  }
-
-  .tech-stack {
-    justify-content: center;
-  }
-
-  .hero-image img {
-    width: 300px;
-  }
-}
 /* ===========================
    ABOUT SECTION
 =========================== */
