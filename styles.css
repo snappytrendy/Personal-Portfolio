@@ -62,25 +62,40 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-
   width: 280px;
   height: 100vh;
-
   padding: 40px 30px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   background: var(--surface);
-
   border-right: 1px solid var(--border);
-
-  overflow-y: hidden;
-
+  overflow-y: auto;
+  overflow-x: hidden;
   z-index: 1000;
 }
+/* ===========================
+   SIDEBAR SCROLLBAR
+=========================== */
 
+.sidebar::-webkit-scrollbar{
+    width:8px;
+}
+
+.sidebar::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background:rgba(16,185,129,.18);
+    border-radius:20px;
+    border:2px solid transparent;
+    background-clip:padding-box;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover{
+    background:rgba(16,185,129,.35);
+}
 .sidebar-top {
   text-align: center;
 }
@@ -244,7 +259,12 @@ body {
   min-height: 90vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #f8fffd 0%, #eefbf7 50%, #ffffff 100%);
+ background:  linear-gradient(
+        135deg,
+        #F3ECE2 0%,
+        #F7F2EA 50%,
+        #FCFAF6 100%
+    );
 }
 
 .hero-container {
@@ -260,10 +280,6 @@ body {
 }
 
 /* LEFT SIDE */
-
-.hero-text {
-  flex: 1;
-}
 .hero-text {
   flex: 1;
   display: flex;
@@ -357,9 +373,6 @@ body {
 /* ===========================
    TECH STACK
 =========================== */
-/* ===========================
-   HERO TECH SECTION
-=========================== */
 
 .hero-tech {
   margin-top: 50px;
@@ -374,7 +387,7 @@ body {
 
   text-transform: uppercase;
 
-  color: #6b7280;
+  color: #6b7280;opacity:.0.8;
 
   margin-bottom: 18px;
 }
@@ -393,7 +406,7 @@ body {
 
   padding: 12px 20px;
 
-  background: #ffffff;
+  background:#FCFCFA;
 
   border: 2px solid #d1fae5;
 
@@ -1133,4 +1146,121 @@ body {
 .project-tech span:hover{
 
     transform:translateY(-2px) scale(1.05);
+}
+/* ==========================
+   SERVICES
+========================== */
+
+.services-section{
+    padding:100px 60px;
+    background:var(--bg);
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-top:70px;
+}
+.service-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 45px rgba(16,185,129,.12);
+}
+.service-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 45px rgba(16,185,129,.12);
+}
+.service-card h3{
+
+    color:var(--heading);
+
+    font-size:1.45rem;
+
+    margin-bottom:18px;
+}
+.service-card p{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+    margin-bottom:22px;
+}
+.service-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+}
+
+.service-card li{
+
+    color:var(--muted);
+
+    margin-bottom:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+}
+
+.service-card li::before{
+
+    content:"✓";
+
+    color:var(--primary);
+
+    font-weight:bold;
 }
